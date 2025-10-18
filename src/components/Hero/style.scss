@@ -1,0 +1,57 @@
+@import '../../styles/config/variables';
+
+.hero {
+    width: 100%;
+    background: linear-gradient(90deg, #FFE5E5 0%, #FFF5E5 100%);
+    padding: 4rem 5rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .hero-content {
+            max-width: 600px;
+
+            h1 {
+                color: $c-gray-500;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+
+                @media (max-width: 768px) {
+                    font-size: 32px;
+                }
+            }
+
+            .hero-discount {
+                color: $c-gray-500;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            .hero-button {
+                padding: 1rem 3rem;
+                background-color: $c-blue;
+                color: $c-white;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: darken($c-blue, 10%);
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,55 @@
+@import '../../styles/config/variables';
+
+.categories {
+    padding: 4rem 5rem;
+    background-color: $c-white;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+
+    .categories-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .category-card {
+                background-color: $c-white;
+                border: 1px solid #E5E5E5;
+                border-radius: 12px;
+                padding: 2rem 1.5rem;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    transform: translateY(-4px);
+                    border-color: $c-blue;
+                }
+
+                .category-icon {
+                    font-size: 48px;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    color: $c-gray-500;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+

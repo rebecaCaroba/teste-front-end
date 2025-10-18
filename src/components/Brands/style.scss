@@ -1,0 +1,65 @@
+@import '../../styles/config/variables';
+
+.brands {
+    padding: 4rem 5rem;
+    background-color: $c-white;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+
+    .brands-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        h2 {
+            color: $c-gray-500;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .brand-card {
+                background-color: $c-white;
+                border: 1px solid #E5E5E5;
+                border-radius: 12px;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    transform: translateY(-4px);
+                }
+
+                .brand-logo {
+                    span {
+                        color: $c-gray-500;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+

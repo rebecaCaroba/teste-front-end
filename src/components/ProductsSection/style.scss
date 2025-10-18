@@ -1,0 +1,82 @@
+@import '../../styles/config/variables';
+
+.products-section {
+    padding: 4rem 5rem;
+    background-color: #FAFAFA;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+
+    .products-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        h2 {
+            color: $c-gray-500;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
+        }
+
+        .products-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+
+            .tab-button {
+                padding: 0.8rem 2rem;
+                background-color: $c-white;
+                color: $c-gray-500;
+                border: 1px solid #E5E5E5;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    border-color: $c-blue;
+                    color: $c-blue;
+                }
+
+                &.active {
+                    background-color: $c-blue;
+                    color: $c-white;
+                    border-color: $c-blue;
+                }
+            }
+        }
+
+        .loading,
+        .error {
+            text-align: center;
+            padding: 3rem;
+            color: $c-gray-500;
+            font-size: 16px;
+        }
+
+        .error {
+            color: #dc3545;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    }
+}
+
