@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://app.econverse.com.br/teste-front-end/junior/tecnologia',
+    baseURL: '/api',
 });
 
 export interface Product {
@@ -17,7 +17,7 @@ export interface ProductsResponse {
 }
 
 export const getProducts = async (): Promise<ProductsResponse> => {
-    const response = await api.get<ProductsResponse>('/lista-produtos/produtos.json');
+    const response = await api.get<ProductsResponse>('/products');
     return response.data;
 };
 
