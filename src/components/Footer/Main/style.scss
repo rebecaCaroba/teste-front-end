@@ -1,0 +1,106 @@
+@import '../../../styles/config/variables';
+
+.footer-main {
+    background-color: #F2F2F2;
+    padding: 3rem 5rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+
+        @media (max-width: 968px) {
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .footer-brand {
+            flex: 1;
+            max-width: 300px;
+
+            @media (max-width: 968px) {
+                max-width: 100%;
+            }
+
+            img {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: $c-gray-500;
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 1.5rem;
+
+                a {
+                    color: $c-gray-500;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $c-blue;
+                    }
+
+                    svg {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            flex: 1;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-column {
+                h3 {
+                    color: $c-gray-500;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 1.2rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        margin-bottom: 0.8rem;
+
+                        a {
+                            color: $c-gray-500;
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            transition: color 0.3s;
+
+                            &:hover {
+                                color: $c-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

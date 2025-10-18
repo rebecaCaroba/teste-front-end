@@ -1,0 +1,22 @@
+@import '../../../styles/config/variables';
+
+.benefitsbar {
+    ul {
+        list-style: none;
+        color: $c-gray-300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            span {
+                font-weight: 700;
+                color: $c-blue;
+            }
+        }
+    }
+}
