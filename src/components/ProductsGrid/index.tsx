@@ -87,16 +87,6 @@ export function ProductsGrid() {
             <button className="carousel-arrow next" onClick={nextSlide}>
                 ›
             </button>
-
-            <div className="carousel-dots">
-                {Array.from({ length: totalSlides }).map((_, index) => (
-                    <button
-                        key={index}
-                        className={`dot ${currentSlide === index ? 'active' : ''}`}
-                        onClick={() => setCurrentSlide(index)}
-                    />
-                ))}
-            </div>
         </div>
     );
 }

@@ -1,26 +1,46 @@
 import './style.scss';
+import { IconTechnology } from '../Icons/IconTechnology';
+import { IconSupermarket } from '../Icons/IconSupermarket';
+import { IconDrinks } from '../Icons/IconDrinks';
+import { IconTools } from '../Icons/IconTools';
+import { IconHealth } from '../Icons/IconHealth'
+import { IconSports } from '../Icons/IconSports';
+import { IconFashion } from '../Icons/IconFashion';
 
 export function Categories() {
-    const categories = [
-        { id: 1, name: 'Tecnologia', icon: '💻' },
-        { id: 2, name: 'Supermercado', icon: '🛒' },
-        { id: 3, name: 'Bebidas', icon: '🥤' },
-        { id: 4, name: 'Ferramentas', icon: '🔧' },
-        { id: 5, name: 'Saúde', icon: '💊' },
-        { id: 6, name: 'Esportes e Fitness', icon: '⚽' },
-        { id: 7, name: 'Moda', icon: '👔' },
-    ];
-
     return (
         <section className="categories">
-            <div className="categories-container">
-                <div className="categories-grid">
-                    {categories.map((category) => (
-                        <div key={category.id} className="category-card">
-                            <div className="category-icon">{category.icon}</div>
-                            <h3>{category.name}</h3>
-                        </div>
-                    ))}
+            <div className="container-categories">
+                <div className="container-catagories">
+                    <button>
+                        <i><IconTechnology /></i>
+                        <span>Tecnologia</span>
+                    </button>
+                    <button>
+                        <i><IconSupermarket /></i>
+                        Supermercado
+                    </button>
+                    <button>
+                        <i><IconDrinks /></i>
+                        Bebida
+                    </button>
+                    <button>
+                        <i><IconTools /></i>
+                        Ferramentas
+                    </button>
+                    <button>
+                        <i><IconHealth/></i>
+                        Saúde
+                    </button>
+
+                    <button>
+                        <i><IconSports /></i>
+                        Esporte e Fitness
+                    </button>
+                    <button>
+                        <i><IconFashion /></i>
+                        Moda
+                    </button>
                 </div>
             </div>
         </section>

@@ -1,55 +1,58 @@
 @import '../../styles/config/variables';
 
 .categories {
-    padding: 4rem 5rem;
-    background-color: $c-white;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2.438rem;
 
-    @media (max-width: 768px) {
-        padding: 2rem 1.5rem;
-    }
+    .container-catagories {
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-    .categories-container {
-        max-width: 1200px;
-        margin: 0 auto;
+        button {
+            background: none;
+            border: none;
+            display: flex;
+            gap: 22px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+            font-weight: 500;
+            font-family: Poppins, sans-serif;
 
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 2rem;
-
-            @media (max-width: 768px) {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
+            span {
+                color: $c-blue;
+                
             }
 
-            .category-card {
-                background-color: $c-white;
-                border: 1px solid #E5E5E5;
-                border-radius: 12px;
-                padding: 2rem 1.5rem;
-                text-align: center;
-                cursor: pointer;
-                transition: all 0.3s;
+            &:hover {
+                color: $c-blue;
+            }
 
-                &:hover {
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                    transform: translateY(-4px);
-                    border-color: $c-blue;
-                }
+            &:focus {
+                background-color: transparent;
+            }
 
-                .category-icon {
-                    font-size: 48px;
-                    margin-bottom: 1rem;
-                }
-
-                h3 {
-                    color: $c-gray-500;
-                    font-size: 14px;
-                    font-weight: 600;
-                    margin: 0;
-                }
+            i {
+                background-color:#F4F4F4;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+                border: none;
+                width: 128px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                font-size: 61px;
+                height: 128px;
             }
         }
     }
 }
-
