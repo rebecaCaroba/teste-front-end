@@ -2,12 +2,16 @@
 
 .hero {
     width: 100%;
-    background: linear-gradient(90deg, #FFE5E5 0%, #FFF5E5 100%);
+    background-image: url('../../../public/Banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 4rem 5rem;
 
     @media (max-width: 768px) {
         padding: 2rem 1.5rem;
     }
+
 
     .hero-container {
         max-width: 1200px;
@@ -17,7 +21,7 @@
             max-width: 600px;
 
             h1 {
-                color: $c-gray-500;
+                color: $c-white;
                 font-size: 48px;
                 font-weight: 700;
                 line-height: 1.2;
@@ -29,16 +33,20 @@
             }
 
             .hero-discount {
-                color: $c-gray-500;
+                color: $c-white;
                 font-size: 24px;
                 font-weight: 600;
                 margin-bottom: 2rem;
+
+                span {
+                    color: $c-yellow;
+                }
             }
 
             .hero-button {
                 padding: 1rem 3rem;
-                background-color: $c-blue;
-                color: $c-white;
+                background-color: $c-yellow;
+                color: $c-gray-500;
                 border: none;
                 border-radius: 8px;
                 font-size: 16px;
@@ -47,7 +55,7 @@
                 transition: all 0.3s;
 
                 &:hover {
-                    background-color: darken($c-blue, 10%);
+                    background-color: darken($c-yellow, 10%);
                     transform: translateY(-2px);
                 }
             }
