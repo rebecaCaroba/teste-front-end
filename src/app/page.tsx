@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Hero />
       <PartnersCarousel />
+      <Hero />
       <Categories />
       <ProductsSection />
       <Brands />
