@@ -1,65 +1,75 @@
 @import '../../styles/config/variables';
 
 .brands {
-    padding: 4rem 5rem;
-    background-color: $c-white;
+    max-width: 1200px;
+    margin: 0 auto;
 
-    @media (max-width: 768px) {
-        padding: 2rem 1.5rem;
+    position: relative;
+
+    h2 {
+        font-weight: 700;
+        color: $c-blue;
+        font-size: 30px;
+        text-align: center;
     }
 
-    .brands-container {
-        max-width: 1200px;
-        margin: 0 auto;
+    .slide-cards-buttons-brand {
+        button {
+            background: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 
-        h2 {
-            color: $c-gray-500;
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            text-align: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            @media (max-width: 768px) {
-                font-size: 24px;
-                margin-bottom: 2rem;
-            }
         }
 
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
+        .left {
+            left: 50px;
+        }
 
-            @media (max-width: 768px) {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
+        .right {
+            right: 50px;
+        }
+    }
 
-            .brand-card {
-                background-color: $c-white;
-                border: 1px solid #E5E5E5;
-                border-radius: 12px;
-                padding: 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.3s;
-                cursor: pointer;
+    .container-slide-brand {
+        overflow: hidden;
+        width: calc(100%);
+        position: relative;
+    }
 
-                &:hover {
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                    transform: translateY(-4px);
-                }
+    .container-slide-cards-brand {
+        display: flex;
+        position: relative;
+        gap: 50px;
 
-                .brand-logo {
-                    span {
-                        color: $c-gray-500;
-                        font-size: 18px;
-                        font-weight: 700;
-                    }
-                }
+        padding: 90px 57px;
+
+        transition: .3s ease-in-out;
+
+        article {
+            width: 211px;
+            height: 211px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 172px;
+                height: 62px;
             }
         }
     }
 }
-
