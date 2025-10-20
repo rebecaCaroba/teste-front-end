@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { ProductCard } from '@/components/ProductCard';
 import { getProducts, Product } from '@/services/api';
 import './style.scss';
+import { IconArrowRight } from '../Icons/IconArrowRight';
+import { IconArrowLeft } from '../Icons/IconArrowLeft';
 
 export function ProductsGrid() {
     const [products, setProducts] = useState<Product[]>([]);
@@ -64,7 +66,7 @@ export function ProductsGrid() {
     return (
         <div className="products-carousel">
             <button className="carousel-arrow prev" onClick={prevSlide}>
-                ‹
+                <i><IconArrowLeft /></i>
             </button>
 
             <div className="carousel-container">
@@ -85,7 +87,7 @@ export function ProductsGrid() {
             </div>
 
             <button className="carousel-arrow next" onClick={nextSlide}>
-                ›
+                <i><IconArrowRight /></i>
             </button>
         </div>
     );

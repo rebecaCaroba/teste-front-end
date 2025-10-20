@@ -1,47 +1,65 @@
 @import '../../styles/config/variables';
 
 .products-section {
-    padding: 4rem 5rem;
-    background-color: #FAFAFA;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 90px;
 
     @media (max-width: 768px) {
         padding: 2rem 1.5rem;
     }
 
     .products-container {
-        max-width: 1200px;
-        margin: 0 auto;
         padding-bottom: 4rem;
 
-        h2 {
-            color: $c-gray-500;
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            text-align: center;
+        .products-title {
+            position: relative;
 
-            @media (max-width: 768px) {
-                font-size: 24px;
+            hr {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 1px;
+                border-color: $c-gray-200;
+            }
+
+            h2 {
+                position: relative;
+                background-color: $c-white;
+                width: fit-content;
+                padding: 0 34px;
+                z-index: 1;
+                margin: 0 auto;
+                color: $c-blue;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                text-align: center;
+    
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
             }
         }
+
 
         .products-tabs {
             display: flex;
             justify-content: center;
-            gap: 1rem;
             margin-bottom: 3rem;
-            flex-wrap: wrap;
+            width: 100%;
 
             .tab-button {
-                padding: 0.8rem 2rem;
-                background-color: $c-white;
-                color: $c-gray-500;
-                border: 1px solid #E5E5E5;
-                border-radius: 8px;
-                font-size: 14px;
-                font-weight: 600;
+                width: 100%;
+                height: 40px;
+                background: none;
+                border: 1px solid #BDBDBD;
                 cursor: pointer;
-                transition: all 0.3s;
+                font-size: 16px;
+                transition: .3s ease-in-out;
 
                 &:hover {
                     border-color: $c-blue;
@@ -49,13 +67,11 @@
                 }
 
                 &.active {
-                    background-color: $c-blue;
-                    color: $c-white;
-                    border-color: $c-blue;
+                    color: $c-blue;
+                    font-weight: 700;
                 }
             }
         }
 
     }
 }
-

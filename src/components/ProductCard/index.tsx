@@ -33,11 +33,12 @@ export function ProductCard({ name, image, price, description }: ProductCardProp
                 />
             </div>
             <div className="product-info">
-                <h3>{name}</h3>
-                <p className="product-description">{description}</p>
+                <p className="product-brand">{description}</p>
                 <div className="product-prices">
                     <span className="old-price">{oldPrice}</span>
                     <span className="current-price">{formattedPrice}</span>
+                    <span className="installments">ou 10x de {formattedPrice} sem juros</span>
+                    <span className="free-shipping">Frete grátis</span>
                 </div>
                 <button className="buy-button">Comprar</button>
             </div>

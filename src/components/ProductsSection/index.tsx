@@ -17,8 +17,10 @@ export function ProductsSection() {
     return (
         <section className="products-section">
             <div className="products-container">
-                <h2>Produtos relacionados</h2>
-                
+                <div className='products-title'>
+                    <h2>Produtos relacionados</h2>
+                    <hr />
+                </div>
                 <div className="products-tabs">
                     {tabs.map((tab) => (
                         <button
