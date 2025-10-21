@@ -44,6 +44,8 @@ export function ProductsGrid() {
         fetchProducts();
     }, []);
 
+    console.log(products);
+
     const productsPerSlide = isMobile ? 2 : 4;
     const totalSlides = Math.ceil(products.length / productsPerSlide);
 
@@ -75,6 +77,7 @@ export function ProductsGrid() {
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 >
                     {products.map((product, index) => (
+                        console.log("so:", product),
                         <ProductCard
                             key={index}
                             name={product.productName}
