@@ -51,8 +51,11 @@
             display: flex;
             justify-content: center;
             margin-bottom: 3rem;
-            flex-wrap: wrap;
             width: 100%;
+
+            @include mobile {
+                flex-direction: column;
+            }
 
             .tab-button {
                 width: 100%;
