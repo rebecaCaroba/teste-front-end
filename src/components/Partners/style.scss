@@ -4,6 +4,10 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 71px;
+
+    @include mobile {
+        margin: 4rem 1rem 0 1rem;
+    }
     
     .container-partners {
         width: 100%;
