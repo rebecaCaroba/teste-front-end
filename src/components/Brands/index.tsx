@@ -60,8 +60,6 @@ export function Brands() {
                                 <article key={key}>
                                     <Image
                                         src={LogoEconverse}
-                                        width={139}
-                                        height={41}
                                         alt='Logo Econverse'
                                     />
                                 </article>
