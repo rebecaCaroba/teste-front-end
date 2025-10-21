@@ -57,13 +57,28 @@
         .products-grid {
             display: grid;
             grid-auto-flow: column;
-            grid-auto-columns: calc(28% - 1.5rem); // 4 produtos no desktop
             gap: 18px;
             transition: transform 0.5s ease-in-out;
-
+            
+            // Desktop: 4 produtos por slide (304px cada + gaps)
+            grid-auto-columns: calc(25% - 14px);
+            
+            // Tablet: 3 produtos por slide
+            @media (max-width: 1024px) and (min-width: 769px) {
+                grid-auto-columns: calc(33.333% - 12px);
+                gap: 16px;
+            }
+            
+            // Mobile: 2 produtos por slide
             @media (max-width: 768px) {
-                grid-auto-columns: calc(100% - 0.5rem); // 2 produtos no mobile
-                gap: 1rem;
+                grid-auto-columns: calc(50% - 9px);
+                gap: 12px;
+            }
+            
+            // Mobile pequeno: 1 produto por slide
+            @media (max-width: 480px) {
+                grid-auto-columns: 100%;
+                gap: 0;
             }
         }
     }

@@ -4,13 +4,21 @@
     background-color: $c-white;
     border-radius: 10px;
     height: 500px;
-    width: 304px;
+    width: 100%;
+    max-width: 304px;
+    min-width: 250px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
     transition: all 0.3s;
+    
+    @media (max-width: 480px) {
+        height: auto;
+        min-height: 450px;
+        min-width: 200px;
+    }
 
     .product-image {
         width: 100%;
