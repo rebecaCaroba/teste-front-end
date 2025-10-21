@@ -1,3 +1,5 @@
+'use client'
+import { useState } from 'react';
 import Image from 'next/image'
 import LogoEconverse from '../../../../public/LogoEconverse.svg'
 import { IconSearch } from '@/components/Icons/IconSearch'
@@ -5,9 +7,16 @@ import { IconBox } from '@/components/Icons/IconBox'
 import { IconFavorites } from '@/components/Icons/IconFavorites'
 import { IconUserCircle } from '@/components/Icons/IconUserCircle'
 import { IconShoppingCart } from '@/components/Icons/IconShoppingCart'
+import { HeaderResponsive } from '../Responsive';
+import { IoMdMenu } from "react-icons/io";
 import './style.scss';
 
 export function Center() {
+    const [isMenuResponsive, setIsMenuResponsive] = useState<boolean>(false);
+
+    function ToggleMenuResponsive() {
+        setIsMenuResponsive(!isMenuResponsive);
+    }
     return (
         <div className='center'>
             <div className="container-header-center">
@@ -34,6 +43,18 @@ export function Center() {
                         <button><i><IconUserCircle /></i></button>
                         <button><i><IconShoppingCart /></i></button>
                     </div>
+                </div>
+                <div className="container-header-responsive">
+                    <button onClick={
+                        () => ToggleMenuResponsive()}
+                    >
+                       <i><IoMdMenu size={24}/></i>
+                    </button>
+
+                    <HeaderResponsive
+                        ToggleMenuResponsive={ToggleMenuResponsive}
+                        isMenuResponsive={isMenuResponsive}
+                    />
                 </div>
             </div>
         </div>

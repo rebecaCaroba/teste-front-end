@@ -9,15 +9,12 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ name, image, price, description }: ProductCardProps) {
-
-    console.log(price);
-    // Formatar preço (API retorna em centavos)
+   
     const formattedPrice = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     }).format(price);
 
-    // Calcular preço antigo (exemplo: 20% a mais)
     const oldPrice = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',

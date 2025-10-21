@@ -1,7 +1,7 @@
 @import '../../../styles/config/variables';
 
 .container-header-center {
-    @media (max-width: 1180px) {
+    @include mobile {
         justify-content: space-between;
     }
 
@@ -24,7 +24,7 @@
 
 
     .container-header-center-content {
-        @media (max-width: 800px) {
+        @include mobile {
             display: none;
         }
 
@@ -58,10 +58,11 @@
     .container-header-right-content {
         display: flex;
 
+        @include mobile {
+            display: none;
+        }
+        
         .buttons-right-content {
-            @media (max-width: 1180px) {
-                display: none;
-            }
 
             display: flex;
             gap: 35px;
