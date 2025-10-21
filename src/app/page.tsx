@@ -17,6 +17,7 @@ export default function Home() {
       <ProductsSection />
       <Partners />
       <Brands />
+      <ProductsSection />
       <Footer />
     </div>
   );
