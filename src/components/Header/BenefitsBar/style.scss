@@ -8,10 +8,13 @@
         align-items: center;
         justify-content: center;
         gap: 3rem;
+        margin: 7px 0;
 
         li {
+            gap: 9px;
             display: flex;
             align-items: center;
+
 
             span {
                 font-weight: 700;

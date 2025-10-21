@@ -7,9 +7,9 @@ export function BenefitsBar() {
     return (
         <div className="benefitsbar">
             <ul>
-                <li> <i><IconSafeShopping /></i> Compra<span> 100% segura</span> </li>
-                <li> <i><IconFreeShipping /></i> <span> Frete grátis </span>acima de R$ 200</li>
-                <li> <i><IconInstallment /></i> <span> Parcele </span>suas compras</li>
+                <li> <i><IconSafeShopping /></i><p>Compra<span> 100% segura</span></p> </li>
+                <li> <i><IconFreeShipping /></i><p><span> Frete grátis </span>acima de R$ 200</p></li>
+                <li> <i><IconInstallment /></i> <p><span> Parcele </span>suas compras</p></li>
             </ul>
         </div>
     )
