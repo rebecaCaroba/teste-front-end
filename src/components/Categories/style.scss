@@ -5,7 +5,11 @@
     margin: 0 auto;
     margin-top: 2.438rem;
 
-    .container-catagories {
+    @include mobile {
+        margin: 2rem 1rem;
+    }
+
+    .container-catagories { 
         height: auto;
         margin-top: 30px;
         display: flex;
@@ -13,6 +17,10 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include mobile {
+            justify-content: center;
+        }
 
         .active {
             background-color: $c-white;
