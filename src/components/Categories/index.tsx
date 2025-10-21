@@ -13,7 +13,7 @@ export function Categories() {
             <div className="container-categories">
                 <div className="container-catagories">
                     <button>
-                        <i><IconTechnology /></i>
+                        <i className='active'><IconTechnology /></i>
                         <span>Tecnologia</span>
                     </button>
                     <button>
