@@ -16,7 +16,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 
     .carousel-arrow {
         background: white;
@@ -30,6 +29,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        z-index: 1;
 
         &.prev {
             margin-right: 0.5rem;
@@ -37,6 +38,7 @@
 
         &.next {
             margin-left: 0.5rem;
+            right: 0;
         }
 
         @media (max-width: 768px) {
@@ -49,16 +51,18 @@
     .carousel-container {
         flex: 1;
         overflow: hidden;
-        
+        padding: 1rem 0.5rem;
+
+
         .products-grid {
             display: grid;
             grid-auto-flow: column;
-            // grid-auto-columns: calc(25% - 1.5rem); // 4 produtos no desktop
+            grid-auto-columns: calc(28% - 1.5rem); // 4 produtos no desktop
             gap: 18px;
             transition: transform 0.5s ease-in-out;
 
             @media (max-width: 768px) {
-                grid-auto-columns: calc(50% - 0.5rem); // 2 produtos no mobile
+                grid-auto-columns: calc(100% - 0.5rem); // 2 produtos no mobile
                 gap: 1rem;
             }
         }

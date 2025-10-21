@@ -39,7 +39,7 @@ export function ProductCard({ name, image, price, description }: ProductCardProp
                     <span className="installments">ou 10x de {formattedPrice} sem juros</span>
                     <span className="free-shipping">Frete grátis</span>
                 </div>
-                <button className="buy-button">Comprar</button>
+                <button className="buy-button">COMPRAR</button>
             </div>
         </div>
     );

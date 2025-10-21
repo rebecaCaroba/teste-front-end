@@ -7,11 +7,11 @@ export function ProductsSection() {
     const [activeTab, setActiveTab] = useState('celular');
 
     const tabs = [
-        { id: 'celular', label: 'Celular' },
-        { id: 'acessorios', label: 'Acessórios' },
-        { id: 'tablets', label: 'Tablets' },
-        { id: 'notebooks', label: 'Notebooks' },
-        { id: 'tvs', label: 'TVs' },
+        { id: 'celular', label: 'CELULAR' },
+        { id: 'acessorios', label: 'ACESSÓRIOS' },
+        { id: 'tablets', label: 'TABLETS' },
+        { id: 'notebooks', label: 'NOTEBOOKS' },
+        { id: 'tvs', label: 'TVS' },
     ];
 
     return (
