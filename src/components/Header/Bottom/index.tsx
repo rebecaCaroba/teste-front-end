@@ -1,3 +1,4 @@
+import { IconCrown } from '@/components/Icons/IconCrown';
 import './style.scss';
 export function Bottom() {
     return (
@@ -10,7 +11,7 @@ export function Bottom() {
                     <li><button>MODA</button></li>
                     <li><button>LANÇAMENTOS</button></li>
                     <li><button><span>OFERTAS DO DIA</span></button></li>
-                    <li><button><i><img src="assets/CrownSimple.svg" alt="Ícone Coroa" /></i> ASSINATURA</button></li>
+                    <li><button><i><IconCrown /></i> ASSINATURA</button></li>
                 </ul>
             </nav>
         </div>

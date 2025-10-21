@@ -24,7 +24,7 @@
                     width: 100%;
                     height: 40px;
                     background: none;
-                    color: $gray;
+                    color: $c-gray-300;
                     font-size: 12px;
                     font-weight: 600;
 
@@ -39,11 +39,11 @@
                     transition: .3s ease-in-out;
 
                     &:hover {
-                        color: $primaryColor;
+                        color: $c-blue;
                     }
 
                     span {
-                        color: $primaryColor;
+                        color: $c-blue;
                     }
 
                     i {
