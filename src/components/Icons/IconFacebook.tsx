@@ -1,8 +1,9 @@
 export function IconFacebook() {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.5 2.5H15.5C14.1739 2.5 12.9021 3.02678 11.9645 3.96447C11.0268 4.90215 10.5 6.17392 10.5 7.5V10.5H7.5V14.5H10.5V22.5H14.5V14.5H17.5L18.5 10.5H14.5V7.5C14.5 7.23478 14.6054 6.98043 14.7929 6.79289C14.9804 6.60536 15.2348 6.5 15.5 6.5H18.5V2.5Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
+
     );
 }
 

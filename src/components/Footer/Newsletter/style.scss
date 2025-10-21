@@ -46,10 +46,17 @@
         }
 
         .newsletter-form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.8rem;
-            align-items: start;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .newsletter-form-inputs {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
 
             @media (max-width: 768px) {
                 grid-template-columns: 1fr;
@@ -81,7 +88,6 @@
                 font-weight: 700;
                 cursor: pointer;
                 transition: all 0.3s;
-                margin-top: 0.5rem;
 
                 &:hover {
                     background-color: darken($c-yellow, 10%);
