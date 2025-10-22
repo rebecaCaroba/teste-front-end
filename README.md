@@ -1,6 +1,6 @@
 ## Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-O projeto está publicado na Vercel — clique no link abaixo para visualizar
+O projeto está publicado na Vercel — clique no link abaixo para visualizar:
 <a href='https://rebecacaroba-teste-front-end.vercel.app/'> App </a>
 
 ```bash
