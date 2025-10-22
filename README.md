@@ -8,7 +8,7 @@ O projeto está publicado na Vercel — clique no link abaixo para visualizar
   $ git clone <https://github.com/pedrosouz6/teste-front-end-jr>
   
   # Acesse a pasta do projeto no terminal/cmd
-  $ cd NomeDaPasta
+  $ cd nome-da-pasta
   
   # Instale as dependências
   $ npm install
