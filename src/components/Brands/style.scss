@@ -1,4 +1,4 @@
-@import '../../styles/config/variables';
+@use '../../styles/config/variables' as *;
 
 .brands {
     max-width: 1200px;

@@ -59,23 +59,18 @@
             grid-auto-flow: column;
             gap: 18px;
             transition: transform 0.5s ease-in-out;
-            
-            // Desktop: 4 produtos por slide (304px cada + gaps)
             grid-auto-columns: calc(25% - 14px);
             
-            // Tablet: 3 produtos por slide
             @media (max-width: 1024px) and (min-width: 769px) {
                 grid-auto-columns: calc(33.333% - 12px);
                 gap: 16px;
             }
             
-            // Mobile: 2 produtos por slide
             @media (max-width: 768px) {
                 grid-auto-columns: calc(50% - 9px);
                 gap: 12px;
             }
             
-            // Mobile pequeno: 1 produto por slide
             @media (max-width: 480px) {
                 grid-auto-columns: 100%;
                 gap: 0;
