@@ -5,6 +5,7 @@ import { Categories } from "@/components/Categories";
 import { ProductsSection } from "@/components/ProductsSection";
 import { Brands } from "@/components/Brands";
 import { Footer } from "@/components/Footer";
+import { Products } from "@/components/Products";
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
       <Categories />
       <ProductsSection />
       <Partners />
-      <ProductsSection />
+      <Products />
       <Partners />
       <Brands />
-      <ProductsSection />
+      <Products />
       <Footer />
     </div>
   );

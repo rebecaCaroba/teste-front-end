@@ -1,0 +1,61 @@
+@import '../../styles/config/variables';
+
+.products {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 90px;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+
+    .products-container {
+        padding-bottom: 4rem;
+
+        .products-title {
+            position: relative;
+
+            hr {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 1px;
+                border-color: $c-gray-200;
+                border-style: double;
+            }
+
+            h2 {
+                position: relative;
+                background-color: $c-white;
+                width: fit-content;
+                padding: 0 34px;
+                z-index: 1;
+                margin: 0 auto;
+                color: $c-blue;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-align: center;
+    
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+
+        .products-button {
+            text-align: center;
+            margin-bottom: 24px;
+            
+            span {
+                font-weight: 700;
+                font-size: 15px;
+            }
+        }
+
+    }
+}
