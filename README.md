@@ -5,7 +5,7 @@ O projeto está publicado na Vercel — clique no link abaixo para visualizar:
 
 ```bash
   # Clone esse repositório
-  $ git clone <https://github.com/pedrosouz6/teste-front-end-jr>
+  $ git clone <https://github.com/rebecaCaroba/teste-front-end/>
   
   # Acesse a pasta do projeto no terminal/cmd
   $ cd nome-da-pasta
